@@ -11,7 +11,7 @@ body {
   height: 100vh;
   flex-direction: column;
   position: relative;
-  background-color: #f7ffef;
+  background-color: #db0085;
   font-family: "Poppins", sans-serif;
 }
 
@@ -27,7 +27,7 @@ section {
 }
 
 h1 {
-  color: #363f2d;
+  color: #ffffff;
 }
 
 .card {
