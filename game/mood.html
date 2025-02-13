@@ -12,6 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,847;1,847&display=swap" rel="stylesheet">
     <title>InnerBloom-MoodMap</title>
   </head>
   <body>
@@ -35,14 +41,14 @@
       <div class="videoFeed">
         <p class="canvas-heading">Live Feed From Your Camera</p>
         <video id="myVidPlayer" width="640" height="480" muted autoplay></video>
-        <button onclick="snapshot()">Create Mood Map</button>
+        <button class="canvas-heading" onclick="snapshot()">Create Mood Map</button>
       </div>
       <div class="mycanvas">
         <p class="canvas-heading">Generated Mood Map</p>
         <div id="snapshot" class="hidden">
           <canvas id="firstCanvas"></canvas>
         </div>
-        <button type="button" id="btnDisplay">Download A Snapshot</button>
+        <button class="canvas-heading" type="button" id="btnDisplay">Download A Snapshot</button>
       </div>
     </div>
     <button class="back-btn"><a href="./games.html">Go Back</a></button>

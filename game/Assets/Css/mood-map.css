@@ -1,10 +1,20 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-color: pink;
+  background:
+  radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+  radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+  radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+  background-blend-mode:screen;
 }
 .container {
   display: flex;
@@ -58,21 +68,23 @@ body {
 }
 
 button {
-  color: white;
+  color: black;
   display: inline-block;
   margin: 8px auto 0 auto;
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 0.3rem;
-  background-color: #db0085;
+  background-color: lightblue;
   font-size: 1.2rem;
   cursor: pointer;
+  opacity: 50%;
 }
 
 video,
 canvas {
-  width: 640px;
-  height: 480px;
+  width: 400px;
+  height: 300px;
+
 }
 
 .header {
@@ -80,13 +92,19 @@ canvas {
 }
 .heading {
   font-size: 2.6rem;
-  font-weight: 500;
+  font-weight: 650;
   letter-spacing: 1px;
+  align-items: center;
 }
 .description {
   width: 60vw;
   margin: 0.6rem auto;
   line-height: 1.1;
+  border: 2px, solid, transparent;
+  border-radius: 0.3rem;
+  background-color: lightblue;
+  color: black;
+  opacity: 50%;
 }
 
 .back-btn {
@@ -97,15 +115,16 @@ canvas {
   text-decoration: none;
   font-size: 18px;
   width: 7rem;
-  background: #db0085;
-  color: white;
+  background: lightblue;
+  color: black;
   border: none;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 19px;
+  opacity: 50%;
 }
 .back-btn a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 @media (max-width: 768px) {
